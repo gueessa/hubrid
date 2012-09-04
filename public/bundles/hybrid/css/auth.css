@@ -1,0 +1,158 @@
+/* Structure */
+body {
+    background: url(../img/bg/bg.jpg) repeat scroll 0 0 #333333;    
+}
+div.login-container {
+    left: 50%; 
+    margin: -250px 0 0 -160px; 
+    position: absolute; 
+    top: 50%; 
+    width: 320px; 
+    z-index: 1;
+}
+div.login-container div.header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+div.login-container div.header div.logo {
+    background: url(../img/logo/logo.png) no-repeat scroll 50% 50% transparent;  
+    height: 101px;
+}
+div.login-container div.body { 
+    padding: 30px 20px 20px; 
+    margin: 0; 
+    display:block;
+    background-color: #423142;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -o-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    border-top: 2px solid #BF1145;
+}
+div.login-container div.footer { 
+}
+/* @end structure */
+
+/* Form elements */
+div.field { 
+    clear: both; 
+    padding-bottom: 10px; 
+}
+div.field span {
+    height: 34px; 
+    line-height: 36px;
+    -o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E3E3E3), to(#D4D4D4));
+    background: -webkit-linear-gradient(top, #E3E3E3, #D4D4D4);
+    background: -moz-linear-gradient(top, #E3E3E3, #D4D4D4);
+    background: -o-linear-gradient(top, #E3E3E3, #D4D4D4);
+    background: linear-gradient(top, #E3E3E3, #D4D4D4);
+    display: block;
+    float: left;
+    padding: 0 10px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+div.field span i.username {
+    background: url(../img/ico/auth/auth_username.png) no-repeat scroll center center transparent;
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+}
+div.field span i.password {
+    background: url(../img/ico/auth/auth_password.png) no-repeat scroll center center transparent;
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+}
+
+div.field label {
+    color: #9A9C99;
+    font-weight: bold;
+    font-size: 10px;
+}
+div.field input[type="text"], div.field input[type="password"] {
+    height: 34px; 
+    line-height: 32px;
+    padding: 0 10px;
+    border: none;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    margin: 0;
+    width: 220px;
+    color: #CFCFCF;
+}
+div.field input[type="password"] {
+    width: 187px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    float: left;
+}
+div.field input[type="text"]:focus, div.field input[type="password"]:focus {
+    padding: 0 10px;
+    border: none;
+}
+div.field div.error { 
+    font-size: 10px; 
+    color: #BF1145; 
+}
+div.field input.error { 
+    background-color: #FFFFFF; 
+}
+/* @end form elements */
+
+/* Buttons */
+button.btn {
+    -o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+    /*
+    background: -webkit-gradient(linear, left top, left bottom, from(#84D344), to(#50AE34));
+    background: -webkit-linear-gradient(top, #84D344, #50AE34);
+    background: -moz-linear-gradient(top, #84D344, #50AE34);
+    background: -o-linear-gradient(top, #84D344, #50AE34);
+    background: linear-gradient(top, #84D344, #50AE34);
+    */
+    background: repeat-x top #BF1145;
+    background: -webkit-gradient(linear, left top, left bottom, from(#D91350), to(#BF1145));
+    background: -webkit-linear-gradient(top, #D91350, #BF1145);
+    background: -moz-linear-gradient(top, #D91350, #BF1145);
+    background: -o-linear-gradient(top, #D91350, #BF1145);
+    background: linear-gradient(top, #D91350, #BF1145);
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    height: 34px; 
+    line-height: 36px;
+	border: none;
+	text-align:	center;
+	cursor:	pointer;
+    margin: 0;
+    padding: 0 10px;
+} 
+button.btn i.btn {
+    background: url(../img/ico/auth/auth_btn.png) no-repeat scroll center center transparent;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+button.btn i.preloader {
+    background: url(../img/ico/auth/auth_preloader.gif) no-repeat scroll center center transparent;
+} 
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { 
+    border:             0;
+    padding:            0;
+}
+/* @end buttons */

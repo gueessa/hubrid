@@ -1,0 +1,142 @@
+/* Forms elements */
+div.fields { 
+    /*background: none repeat scroll 0 0 #F1F4F7;*/
+    background: none repeat scroll 0 0 #F1F4F7;
+    border-radius: 4px 4px 4px 4px; 
+    height: 100%; 
+    margin: 5px 0; 
+    overflow: hidden; 
+    padding: 10px; 
+}
+div.field { 
+    clear: both; 
+    padding-bottom: 10px; 
+}
+div.field label { 
+    margin: 0 0 10px; 
+    text-shadow: 0 1px 0 #FFFFFF; 
+    color: #555555; 
+    line-height: normal; 
+    font-size: 11px; 
+    display: block; 
+    margin-bottom: 4px; 
+} 
+div.field label.required { 
+    font-weight: bold; 
+}
+div.field div.hint { 
+    font-size: 10px; 
+    color: #777777; 
+}
+div.field div.error, div.error { 
+    font-size: 10px; 
+    color: #CC3300; 
+    text-shadow: 0 1px 0 #FFFFFF; 
+}
+.horizontal .controls {
+    margin-left: 160px;
+    *display: inline-block;
+    *margin-left: 0;
+    *padding-left: 20px;
+}
+.horizontal div.field label {
+    float: left;
+    display: inline-block;
+    width: 140px;
+    padding-top: 5px;
+    text-align: right;
+}
+div.image-field { 
+    background: none repeat scroll 0 0 #FFFFFF; 
+    border: 1px solid #E6ECF2; 
+    display: block; 
+    padding: 10px 5px; 
+    text-align: center; 
+    width: 140px; 
+    position: relative; 
+    clear: both; 
+    margin-bottom: 10px; 
+    border-radius: 4px;
+}
+div.image-field a.remove { 
+    position: absolute; 
+    left: 0; 
+    top:  0;
+    background: url(../img/ico/fancy_close.png) 0 0 no-repeat transparent;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 30px;
+    width: 30px;     
+}
+div.image-field img { 
+    border: 2px solid #B6C0C2; 
+}
+div.image-thumb {
+    margin:             3px auto 0;
+    position:           relative;
+    width:              130px; 
+    padding:            5px; 
+    text-align:         center; 
+}
+div.image-thumb a {
+    background:         url(../img/ico/remove.png) no-repeat scroll 0 0 transparent;
+    cursor:             pointer;
+    display:            block;
+    height:             15px;
+    left:               -6px;
+    position:           absolute;
+    top:                -6px;
+    width:              15px;
+}
+div.image-thumb div.filename {
+    font-size:          10px; 
+    line-height:        15px;
+}
+
+div.prepend .add-on {
+	font-size:			        11px;
+	border:				        1px solid #8195a0;
+    border-right:               medium none;
+	color:				        #5f6c74;
+	outline:			        0;
+	border-radius:		        3px 0 0 3px;
+	-moz-border-radius:	        3px 0 0 3px;
+  	-webkit-border-radius:      3px 0 0 3px;
+    background-color:           #FFFFFF;
+    height:                     25px;
+    line-height:                25px;
+    display:                    inline-block; 
+    float:                      left;
+    padding:                    0 0 0 5px;   
+}
+div.prepend input[type="text"] {
+    border-radius:              0 3px 3px 0;
+    -moz-border-radius:	        0 3px 3px 0;
+    -webkit-border-radius:      0 3px 3px 0;
+    border-left:                medium none;
+    padding:                    5px 5px 5px 0;
+}
+div.prepend input[type="text"]:focus {
+    border-width:               1px;
+    padding:                    5px 5px 5px 0;
+} 
+/* @end form elements */
+
+/* Error */
+select.error, input.error, textarea.error {
+    background-color: #FFDDDD; 
+    background-image: none; 
+    border: 1px solid #CC0000;
+    color: #CC0000;
+}
+/* @end error */
+
+/* Success */
+select.success, input.success, textarea.success {
+    background-color: #DBF1E0; 
+    background-image: none; 
+    border: 1px solid #468847;
+    color: #468847;
+}
+/* @end success */

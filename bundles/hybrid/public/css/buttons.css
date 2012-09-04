@@ -1,0 +1,81 @@
+/* Buttons */
+.btn {
+	background:	#eff0f2;
+	background:	-webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#e0e4e7));
+	background:	-moz-linear-gradient(top,  #fefefe,  #e0e4e7);	
+	padding: 0 15px;
+	color:	#777777;
+	border:	none;
+	text-align: center;
+	cursor:	pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+	-moz-box-shadow: 0 1px 2px #999;
+	-webkit-box-shadow:	0 1px 2px #999;
+    box-shadow: 0 1px 2px #999;
+	text-shadow: -1px -1px 1px #4d5c08;
+    height: 28px; 
+    line-height: 26px;
+    text-decoration: none;  
+    font-family: Helvetica,arial,freesans,clean,sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+    margin-right: 4px;
+}
+.btn:hover {
+	background: #d9dadb;
+	/*
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E0E0E0));
+	background: -moz-linear-gradient(top,  #FFFFFF,  #E0E0E0);
+    */
+    color: #555555; 	
+}
+a.btn { 
+    display: inline-block; 
+    height: 28px; 
+    line-height: 28px; 
+    text-decoration: none; 
+}
+a.btn.small { 
+    height: 23px; 
+    line-height: 23px; 
+    font-size: 10px!important;
+    padding: 0 10px;
+}
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}
+.btn-success {
+    background-color: #5bb75b;
+    background-image: -moz-linear-gradient(top, #62c462, #51a351);
+    background-image: -ms-linear-gradient(top, #62c462, #51a351);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+    background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+    background-image: -o-linear-gradient(top, #62c462, #51a351);
+    background-image: linear-gradient(top, #62c462, #51a351);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+    border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+    background-color: #51a351;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+.btn-success:active,
+.btn-success.active {
+    background-color: #408140 \9;
+}
+/* @end buttons */
