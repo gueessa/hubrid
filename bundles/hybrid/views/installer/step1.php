@@ -74,7 +74,11 @@
 		if ($auth['driver'] === 'eloquent' and ltrim($auth['model'], '\\') !== 'Hybrid\Model\User') $auth_eloquent = false; 
     ?>
     
-    <div class="alert alert-info"><?php echo __('hybrid::installer.hints.auth') ?></div>
+    <div class="alert alert-info">
+        <a class="close" data-dismiss="alert" type="button">×</a>
+        <?php echo __('hybrid::installer.hints.auth') ?>
+    </div>
+    
     
     <div class="fields horizontal">
         <div class="field">

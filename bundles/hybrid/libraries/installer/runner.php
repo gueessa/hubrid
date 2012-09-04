@@ -262,10 +262,11 @@ class Runner {
         
             // Create administator user
             $user = User::create(array(
+                'username'  => $input['username'],
                 'email'     => $input['email'],
                 'password'  => Hash::make($input['password']),
                 'fullname'  => $input['fullname'],
-                'status'    => 0,
+                'status_id' => 0,
             ));
         
             // Attach Administrator role to the newly created administrator

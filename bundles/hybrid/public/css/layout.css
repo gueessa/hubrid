@@ -1,9 +1,73 @@
 /* Layout */
+body {
+    background: url(../img/bg/bg.jpg) repeat scroll 0 0 #333333;
+    background-color: #55688A;    
+}
+.three-panels {
+    position: relative;
+}
+.three-panels .left-panel {
+    width: 250px;    
+}
+.three-panels .center-panel {
+    background-color: white;
+    border: 1px solid #9CACBC;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    -moz-transition: left 250ms ease-out 150ms;
+    top: 6px;
+    z-index: 2;    
+}
+.right-panel-visible .three-panels .center-panel {
+    border-radius: 6px 0 0 0;
+}
+.three-panels .right-panel {
+    background-color: white;
+    border: 1px solid #9CACBC;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    -moz-transition: left 250ms ease-out 0s;
+    border-radius: 0 6px 0 0;
+    top: 6px;
+    z-index: 1;    
+}
+.three-panels .bottom-panel {
+    -moz-transition: left 250ms ease-out 150ms;
+    left: 239px;
+    bottom: 0;
+    height: 44px;
+    position: absolute;
+    right: 6px;
+    z-index: 3;
+}
+.three-panels .bottom-panel .bottom-bar {
+   -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F2F2F2;
+    border-color: #E5E5E5 #E5E5E5 #E5E5E5 #AAAAAA;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    font-weight: 600;
+}
+.three-panels .bottom-panel .bottom-bar .help-bar {
+    height: 42px;
+    position: relative;
+}
+
+
 .main-container { 
-    margin:             0 auto; 
-    padding:            12px 30px; 
+    margin: 0 auto; 
+    padding: 12px 30px; 
+    position: relative;
 }
 .page-container {
+    /*
     -moz-border-bottom-colors: none;
     -moz-border-image:  none;
     -moz-border-left-colors: none;
@@ -18,6 +82,16 @@
     padding:            0; 
     margin:             0 auto;
     min-width:          950px;
+    */
+    background-color:   #FFFFFF;
+    border: 1px solid #9CACBC;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    -moz-transition: left 250ms ease-out 150ms;
+    top: 6px;
+    z-index: 2;
+    position: absolute;        
+    min-width: 950px;
 }
 .page-header { 
     background:         -moz-linear-gradient(center top , rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)) repeat scroll 0 0 #ECF1F4; 

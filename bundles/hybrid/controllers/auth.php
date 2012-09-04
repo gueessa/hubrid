@@ -79,7 +79,7 @@ class Hybrid_Auth_Controller extends Base_Controller {
         }
         
         $attempt = array(
-            'username' => $input['email'],
+            'username' => $input['username'],
             'password' => $input['password']
         );
         

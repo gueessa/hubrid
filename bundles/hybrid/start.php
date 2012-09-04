@@ -12,8 +12,10 @@
 */
 
 Autoloader::map(array(
-    'Hybrid'          => Bundle::path('hybrid').'hybrid'.EXT,
-	'Base_Controller' => Bundle::path('hybrid').'controllers'.DS.'core'.DS.'base.php',
+    'Hybrid'               => Bundle::path('hybrid').'hybrid'.EXT,
+	'Base_Controller'      => Bundle::path('hybrid').'controllers'.DS.'core'.DS.'base.php',
+    'Backend_Controller'   => Bundle::path('hybrid').'controllers'.DS.'core'.DS.'backend.php',
+    'Frontend_Controller'  => Bundle::path('hybrid').'controllers'.DS.'core'.DS.'frontend.php',
 ));
 
 /*

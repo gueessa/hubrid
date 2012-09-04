@@ -6,17 +6,17 @@
     <title></title>
     <?php
     	$asset = Asset::container('hybrid.backend')
-            ->style('reset',    'bundles/hybrid/css/reset.css')
-            ->style('forms',    'bundles/hybrid/css/forms.css', 'reset')
-            ->style('alerts',   'bundles/hybrid/css/alerts.css', 'reset')
-            ->style('buttons',  'bundles/hybrid/css/buttons.css', 'reset')
-            ->style('installer','bundles/hybrid/css/installer.css', 'reset')
-            ->script('jquery',  'bundles/hybrid/js/jquery.min.js')
-            ->script('form',    'bundles/hybrid/js/jquery.form.min.js', 'jquery')
-            ->script('core',    'bundles/hybrid/js/core.js', 'jquery')
-            ->script('ajax',    'bundles/hybrid/js/ajax.js', 'jquery')
-            ->script('core',    'bundles/hybrid/js/plugins/validator.js', 'jquery');
-        
+            ->style('reset',        'bundles/hybrid/css/reset.css')
+            ->style('forms',        'bundles/hybrid/css/forms.css', 'reset')
+            ->style('alerts',       'bundles/hybrid/css/alerts.css', 'reset')
+            ->style('buttons',      'bundles/hybrid/css/buttons.css', 'reset')
+            ->style('installer',    'bundles/hybrid/css/installer.css', 'reset')
+            ->script('jquery',      'bundles/hybrid/js/jquery.min.js')
+            ->script('form',        'bundles/hybrid/js/jquery.form.min.js', 'jquery')
+            ->script('core',        'bundles/hybrid/js/core.js', 'jquery')
+            ->script('ajax',        'bundles/hybrid/js/ajax.js', 'jquery')
+            ->script('validator',   'bundles/hybrid/js/plugins/validator.js', 'jquery')
+            ->script('alert',       'bundles/hybrid/js/plugins/alert.js', 'jquery');
         echo $asset->styles();
         echo $asset->scripts();            
     ?>

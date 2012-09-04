@@ -18,7 +18,7 @@
 	<?php if ($message instanceof Hybrid\Messages): ?>
         <?php foreach (array('error', 'info', 'success') as $key): ?>
             <?php if ($message->has($key)): ?>
-                <?php $message->format('<div class="alert alert-'.$key.'">:message<button class="close" data-dismiss="alert">×</button></div>') ?>
+                <?php $message->format('<div class="alert alert-'.$key.'">:message<a class="close" data-dismiss="alert">×</a></div>') ?>
                 <?php echo implode('', $message->get($key)) ?>
             <?php endif ?> 
         <?php endforeach ?>
