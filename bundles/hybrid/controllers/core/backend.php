@@ -7,7 +7,7 @@ class Backend_Controller extends Base_Controller {
      * 
      * @var string
      */    
-    public $layout = 'hybrid::layouts.base';
+    //public $layout = 'hybrid::layouts.base';
     
     /**
      * Constructor

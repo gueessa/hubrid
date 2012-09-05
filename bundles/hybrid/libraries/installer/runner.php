@@ -168,11 +168,11 @@ class Runner {
                 $table->string('email', 100)->unique();
                 $table->string('fullname', 100)->nullable();
                 $table->string('password', 60);
-                $table->string('ip', 15);
+                $table->string('ip', 15)->nullable();
                 
                 $table->boolean('status_id');
                 
-                $table->timestamp('last_login');
+                $table->timestamp('last_login')->nullable();
                 $table->timestamps();
             });
         
