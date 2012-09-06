@@ -4,13 +4,17 @@ $(function(){
         
         defaults : function() {
             return {
-                name         : 'Default title',
-                releaseDate  : 2011,
+                user_id : 0,
+                email : '',
+                username : '',
+                fullname : '',
+                status_id : 0,
+                last_login : '' 
             };
         },        
         
         initialize : function(){
-           alert("Oh hey! ");
+           alert("Model init");
         },
         
         clear : function() {
@@ -22,38 +26,55 @@ $(function(){
         model : core.UserModel
     });
 
-    var user = new core.UserModel({ name: "Portal 2", releaseDate: 2011});
+    var user = new core.UserCollection(json_data);
     
-    /*
     core.UserView = Backbone.View.extend({
-        tagName     : "tr",
-        className   : "user",
-        template    : _.template($('#row-template').html()),
-        events      : {},
-        render      : function() {
+        tagName : "tr",
+        className : "user",
+        template : _.template($('#row-template').html()),
+        events : {
+            
+        },
+        render : function() {
+            this.$el.html(this.template(this.model.toJSON()));
+            /*
             $(this.el).html(this.template(this.model.toJSON()));
             this.setContent();
             return this;
+            */
+            return this;
         },
-        initialize  : function (args) {
+        initialize : function (args) {
             if (typeof json_data == 'undefined') {
-                core.User.fetch();
+                this.model.fetch();
             } else {
-                core.User.reset(json_data);
+                this.model.set(json_data);
+            }
+
+            //this.model.bind('change', this.render, this);
+            //this.model.bind('destroy', this.remove, this);
+            /*            
+            alert("view init");
+            if (typeof json_data == 'undefined') {
+                core.UserModel.fetch();
+            } else {
+                core.UserModel.set(json_data);
             }
             
             _.bindAll(this, 'render', 'close');
             this.model.bind('change', this.render);            
             this.model.view = this;
+            */
         },
         setContent  : function() {
         },
         remove: function() {
-            $(this.el).remove();
+            //$(this.el).remove();
         },
         clear: function() {
             this.model.clear();
         }        
     });
-    */
+    
+    //var user = new core.UserView;
 });

@@ -29,7 +29,14 @@ class Hybrid_Users_Controller extends Backend_Controller {
         $var = array(
             'users'     => $users,
             'title'     => 'Users',
-            'json_data' => json_encode(array('entry_id' => array(1,2,3))),
+            'json_data' => json_encode(array(
+                'uset_id'   => 1,
+                'username'  => 'tester',
+                'fullname'  => 'Valery',
+                'email'     => 'gueessa@gmail.com',
+                'status_id' => '1',
+                'last_login'=> '04.11.2012'    
+            )),
         );
         
        	return View::make('hybrid::users.index', $var);
