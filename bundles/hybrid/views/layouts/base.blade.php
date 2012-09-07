@@ -23,13 +23,14 @@
             ->script('form',        'bundles/hybrid/js/jquery/jquery.form.min.js', 'jquery')
             
             // Backbone
-            ->script('json2',       'bundles/hybrid/js/backbone/json2.js')
+            //->script('json2',       'bundles/hybrid/js/backbone/json2.js')
             ->script('underscore',  'bundles/hybrid/js/backbone/underscore.min.js', 'jquery')
             ->script('backbone',    'bundles/hybrid/js/backbone/backbone.min.js', 'jquery')
             //->script('localstorage','bundles/hybrid/js/backbone/backbone-localstorage.js', 'backbone')
            
             
             // Core
+            ->script('app',         'bundles/hybrid/js/core/app.js', 'jquery')
             ->script('core',        'bundles/hybrid/js/core/core.js', 'jquery')
             ->script('ajax',        'bundles/hybrid/js/core/ajax.js', 'jquery')
             
@@ -41,7 +42,7 @@
         echo $asset->styles();
         echo $asset->scripts();            
     ?>
-
+    
     @section('styles')
     @yield_section
 
@@ -112,5 +113,13 @@
     <footer>
     </footer>
     <!-- Footer end -->
+    <div id="alert_popup"></div>
+    <script type="text/template" id="alert-popup">
+        <div class="alert-popup-inner">
+            <div class="alert-popup-header"><%= title %></div>
+            <div class="alert-popup-body"><%= message %></div>
+            <div class="alert-popup-footer"></div>
+        </div>
+    </script>
 </body>
 </html>

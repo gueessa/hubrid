@@ -28,6 +28,8 @@
             <th></th>
             <th></th>
         </tr>
+        <tbody id="user-list">
+        </tbody>
         @forelse ($users->results as $row)
             <tr>
                 <td>{{ $row->username }}</td>
@@ -35,8 +37,6 @@
                 <td>{{ $row->fullname }}</td>
                 <td></td>
             </tr>
-            <tbody id="user-entry-box">
-            </tbody>
         @empty
             <tr>
                 <td colspan="4">There are not posts in the array!</td>
@@ -45,12 +45,13 @@
     </table>
 
     <script type="text/template" id="row-template">
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        <td><%= username %></td>
+        <td><%= email %></td>
+        <td><%= fullname %></td>
+        <td>
+            <a data-role="delete">delete</a>
+            <a data-role="change-status">change status</a> Curent status : <%= status_id %>
+        </td>
     </script>
     
     <script type="text/javascript">
